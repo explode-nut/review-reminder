@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:test.db
+    driver-class-name: org.sqlite.JDBC
+    username:
+    password:
+mybatis:
+  type-aliases-package: com.czn.reviewreminder.entity
+  configuration:
+    map-underscore-to-camel-case: true
