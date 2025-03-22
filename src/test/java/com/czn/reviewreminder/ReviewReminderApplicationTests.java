@@ -1,14 +1,13 @@
 package com.czn.reviewreminder;
 
-import com.czn.reviewreminder.mvc.mapper.DatabaseInitMapperTest;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import java.io.File;
 
 @SpringBootTest
+@ActiveProfiles("test")
 class ReviewReminderApplicationTests {
     @Test
     void contextLoads() {

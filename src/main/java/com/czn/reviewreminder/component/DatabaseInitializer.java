@@ -15,6 +15,8 @@ public class DatabaseInitializer implements CommandLineRunner {
     public void run(String... args) throws Exception {
         databaseInitMapper.createCategoryTable();
         databaseInitMapper.createErrorTable();
+        databaseInitMapper.createTagTable();
+        databaseInitMapper.createErrorQueueTable();
         System.out.println("初始化数据库表成功！");
     }
 }

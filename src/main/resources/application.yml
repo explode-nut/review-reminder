@@ -1,12 +1,16 @@
 spring:
   application:
     name: ReviewReminder
+
   datasource:
     url: jdbc:sqlite:reviewreminder.db
     driver-class-name: org.sqlite.JDBC
     username:
     password:
+
 mybatis:
   type-aliases-package: com.czn.reviewreminder.entity
   configuration:
     map-underscore-to-camel-case: true
+
+
