@@ -28,9 +28,7 @@ public interface DatabaseInitMapper {
             "  id INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
             "  name TEXT NOT NULL,\n" +
             "  category_id INTEGER,\n" +
-            "  error_id INTEGER,\n" +
-            "  FOREIGN KEY (category_id) REFERENCES category(id) ON DELETE CASCADE,\n" +
-            "  FOREIGN KEY (error_id) REFERENCES error(id) ON DELETE CASCADE\n" +
+            "  error_id INTEGER\n" +
             ");")
     void createTagTable();
 

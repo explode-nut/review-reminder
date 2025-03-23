@@ -101,6 +101,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <mainClass>com.czn.reviewreminder.ReviewReminderApplication</mainClass>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
@@ -137,20 +138,20 @@
             </plugin>
 
             <!-- JavaFX Maven 插件 -->
-<!--            <plugin>-->
-<!--                <groupId>org.openjfx</groupId>-->
-<!--                <artifactId>javafx-maven-plugin</artifactId>-->
-<!--                <version>0.0.8</version>-->
-<!--                <configuration>-->
-<!--                    <mainClass>com.example.JavaFxSpringBootApp</mainClass>-->
-<!--                    <launcher>app</launcher>-->
-<!--                    <jlinkZipName>app</jlinkZipName>-->
-<!--                    <jlinkImageName>app</jlinkImageName>-->
-<!--                    <noManPages>true</noManPages>-->
-<!--                    <stripDebug>true</stripDebug>-->
-<!--                    <noHeaderFiles>true</noHeaderFiles>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>com.example.JavaFxSpringBootApp</mainClass>
+                    <launcher>app</launcher>
+                    <jlinkZipName>app</jlinkZipName>
+                    <jlinkImageName>app</jlinkImageName>
+                    <noManPages>true</noManPages>
+                    <stripDebug>true</stripDebug>
+                    <noHeaderFiles>true</noHeaderFiles>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 

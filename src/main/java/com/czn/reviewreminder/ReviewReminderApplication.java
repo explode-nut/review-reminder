@@ -1,5 +1,6 @@
 package com.czn.reviewreminder;
 
+import com.czn.reviewreminder.ui.MainUI;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -10,14 +11,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import javax.swing.*;
-
-
 @SpringBootApplication
 @MapperScan("com.czn.reviewreminder.mvc.mapper")
 public class ReviewReminderApplication extends Application {
     private ConfigurableApplicationContext springContext;
-    private VBox root;
 
     @Override
     public void init() {
@@ -26,14 +23,8 @@ public class ReviewReminderApplication extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        root = new VBox();
-        Button button = new Button("Click me!");
-        root.getChildren().add(button);
-
-        Scene scene = new Scene(root, 300, 250);
-        primaryStage.setTitle("JavaFX Spring Boot App");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        MainUI mainUI = new MainUI();
+        mainUI.show(primaryStage);
     }
 
     @Override
